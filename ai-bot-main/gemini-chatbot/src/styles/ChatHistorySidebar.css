@@ -1,0 +1,71 @@
+.chat-history-sidebar {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #36393f;
+    padding: 15px 10px;
+  }
+  
+  .chat-history-sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    color: #b9bbbe;
+  }
+  
+  .new-chat-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  .new-chat-button svg {
+    margin-right: 10px;
+  }
+
+  .chat-sessions-list {
+    flex: 1;
+    overflow-y: auto;
+  }
+  
+  .chat-session {
+    display: flex;
+    justify-content: flex-end; /* Align delete button to the right */
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  .delete-session {
+    margin-left: 10px; /* Add some space between the session title and the delete button */
+    background: none;
+    border: none;
+    color: #888;
+    cursor: pointer;
+  }
+
+  .delete-session:hover {
+    color: #ff4d4d;
+  }
+  
+  .chat-session.active {
+    background-color: #36393f;
+  }
+  
+  .chat-session:hover {
+    border-radius: 15px;
+    color:white;
+    background-color: rgb(106, 103, 103);
+  }
+
+  .chat-session span {
+    flex-grow: 1; /* Allow the session title to take the available space */
+    cursor: pointer;
+  }
